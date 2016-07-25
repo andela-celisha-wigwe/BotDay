@@ -40,6 +40,11 @@ $bo = new Bot\BotDay();
 
 // var_dump($_POST['text']);
 
+var_dump($_POST);
+
+die("here");
+
+
 
 $bo->send($_POST['text']);
 
