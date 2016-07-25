@@ -1,7 +1,8 @@
 {
     "require": {
         "maknz/slack": "^1.7",
-        "elchroy/ose": "dev-develop"
+        "elchroy/ose": "dev-develop",
+        "elchroy/lara-sms": "dev-develop"
     }, 
 
     "autoload": {

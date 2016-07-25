@@ -4,9 +4,45 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "19f9e7c3c7596ee5646906fc746b2cb4",
-    "content-hash": "efd6e7fa2d9a73df4c45124aec19c7d8",
+    "hash": "f62c0451950c9087fdbcbd57876488af",
+    "content-hash": "a51fe41b4813ac8102f0215e63a1ef37",
     "packages": [
+        {
+            "name": "elchroy/lara-sms",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andela-celisha-wigwe/lara-sms.git",
+                "reference": "dbc9b7f863e35a198f6ef9e87cad0964c143a491"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andela-celisha-wigwe/lara-sms/zipball/dbc9b7f863e35a198f6ef9e87cad0964c143a491",
+                "reference": "dbc9b7f863e35a198f6ef9e87cad0964c143a491",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LARASMS\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "andela-celisha-wigwe",
+                    "email": "chijioke.elisha-wigwe@andela.com"
+                }
+            ],
+            "description": "A small PHP package to send SMS to mobile phones",
+            "time": "2016-07-25 17:41:04"
+        },
         {
             "name": "elchroy/ose",
             "version": "dev-develop",
@@ -329,7 +365,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "elchroy/ose": 20
+        "elchroy/ose": 20,
+        "elchroy/lara-sms": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

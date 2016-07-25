@@ -21,10 +21,10 @@ class BotDay {
 		
 	}
 
-	public function send()
+	public function send($message)
 	{
 		// With an instantiated client
-		$this->client->send('Hello world!');
+		$this->client->send($message);
 	}
 
 }
