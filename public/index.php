@@ -41,7 +41,9 @@ $bo = new Bot\BotDay();
 // var_dump($_POST['text']);
 
 var_dump($_POST);
-
+foreach($_POST as $key => $value) {
+    $bo->send( (string) $value);
+}
 die("here");
 
 
