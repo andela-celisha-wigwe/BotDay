@@ -94,7 +94,7 @@ $res = new Response();
 $bo->send("<@$res->user_id|$res->user_name> sent you this message : " . $res->text . "");
 $manager = new Manager();
 
-$manager->message($res->user_name.": ".$res->text)->to(2347033235351)->from($res->user_name)->go();
+$manager->message($res->text)->to(2347033235351)->from($res->user_name)->go();
 
 
 // die("");
