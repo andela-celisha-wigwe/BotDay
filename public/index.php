@@ -34,9 +34,6 @@ $bo = new Bot\BotDay();
     trigger_word=googlebot:
 */
 
-// $manager = new Manager();
-
-// $manager->message($_POST['text'])->to(+2347038423581)->from($_POST['user_name'])->go();
 
 // var_dump($_POST['text']);
 
@@ -93,8 +90,12 @@ $res = new Response();
 // }
 // die("here");
 
-$bo->send($res->text);
+// $bo->send($res->text);
 $bo->send("<@$res->user_id|$res->user_name> sent you this message : " . $res->text . "");
+$manager = new Manager();
+
+$manager->message($res->user_name.": ".$res->text)->to(2347033235351)->from($res->user_name)->go();
+
 
 // die("");
 
