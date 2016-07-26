@@ -14,8 +14,15 @@ class BotDay {
 
 	public function __construct()
 	{
+		$settings = [
+			// 'username' => 'Cyril',
+			// 'channel' => '#accounting',
+			'link_names' => true
+		];
+
+
 		// Instantiate without defaults
-		$this->client = new MaknzClient(self::HOOK);
+		$this->client = new MaknzClient(self::HOOK, $settings);
 		// $this->evan = new Evangelist('andela-celisha-wigwe');
 
 		
